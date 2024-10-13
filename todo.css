@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #7CF5FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    height: 90%;
+    width: 50%;
+    background-color: #4F75FF;
+    border-radius: 30px 30px 10px 10px;
+    box-shadow: inset 8px 8px 10px hsla(214, 55%, 82%, 0.618), 15px 15px 15px hsla(0, 0%, 0%, 40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.heading{
+    margin-top: 1em;
+    color: white;
+}
+
+.newTask{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.taskbox{
+    height: 1.5em;
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.list{
+    width: 90%;
+    height: 55%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 10px;
+    column-gap: 8px;
+    background-color: aquamarine;
+    border-radius: 5px 5px 10px 10px;
+    font-weight: 600;
+}
+
+.mark{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.buttonArr{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+    background: linear-gradient(90deg, purple 40%, blue);
+    box-shadow: inset 3px 3px 2px hsla(214, 55%, 82%, 0.618), 5px 5px 5px hsla(256, 75%, 58%, 0.618);
+    animation: btn 3s infinite ease-in-out;
+  }
+  
+  @keyframes btn {
+    0%{background: linear-gradient(90deg, purple 0%, rgb(52, 130, 48))}
+    25%{background: linear-gradient(90deg, purple 25%, rgb(255, 0, 81))}
+    50%{background: linear-gradient(90deg, purple 50%, rgb(255, 162, 0))}
+    75%{background: linear-gradient(90deg, blue 25%, purple)}
+    100%{background: linear-gradient(90deg, blue 0%, purple)}
+  }
+  

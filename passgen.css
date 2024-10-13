@@ -1,0 +1,80 @@
+ *{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 220, 213);
+}
+.main{
+    height: auto;
+    width: 40vw;
+    display: flexbox;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.062);
+    box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.411);
+}
+h1{
+    color: red;
+}
+label{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(182, 51, 4);
+}
+input{
+    height: 1.25rem;
+    width: auto;
+    outline: none;
+    border-radius: 0 1rem 1rem 0;
+    border: 4px double rgba(255, 0, 0, 0.489);
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.25em;
+    margin: 2rem 0; 
+}
+
+.btn{
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+    background: linear-gradient(90deg, purple 40%, blue);
+    box-shadow: inset 3px 3px 2px hsla(214, 55%, 82%, 0.618), 5px 5px 5px hsla(256, 75%, 58%, 0.618);
+    animation: btn 3s infinite ease-in-out;
+  }
+  
+  @keyframes btn {
+    0%{background: linear-gradient(90deg, purple 0%, blue)}
+    25%{background: linear-gradient(90deg, purple 25%, blue)}
+    50%{background: linear-gradient(90deg, purple 50%, blue)}
+    75%{background: linear-gradient(90deg, blue 25%, purple)}
+    100%{background: linear-gradient(90deg, blue 0%, purple)}
+  }
+  
+
+/* .btn{
+    height: 3em;
+    width: 7em;
+    margin: 1rem;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3em;
+    border-style: unset;
+    background: linear-gradient(rgb(230, 21, 21) 30%, rgb(255, 77, 0) 60%, rgb(246, 10, 10) 100%);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(rgba(230, 21, 21, 0.825) 30%, rgba(255, 77, 0, 0.847) 60%, rgba(246, 10, 10, 0.856) 100%);
+} */

@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+    background-color: rgb(223, 220, 220);
+}
+.toggle{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.944);
+    border: 3px solid rgb(28, 30, 185);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: justify-content 2s ease;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    border: 4px double rgb(40, 116, 179);
+    border-radius: 50px;
+    cursor: pointer;
+    background-image: url("sun.png");
+    background-size: cover;
+}
